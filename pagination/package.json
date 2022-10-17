@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "mocha test/*.spec.js",
+    "start": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,11 @@
     "express": "^4.18.2",
     "mongoose": "^6.6.5",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0",
+    "mocha-explorer-launcher-scripts": "^0.4.0",
+    "request": "^2.88.2"
   }
 }
